@@ -19,3 +19,26 @@
 .usermotto {
   margin-top: 200px;
 } */
+.container{
+  padding: 20rpx;
+}
+.activity_list{
+  display: flex;
+  width: 100%;
+  flex-direction:column;
+}
+.activity_list .activity_info{
+  padding: 20rpx 15rpx;
+  margin-bottom: 10rpx;
+}
+.tags_view v-tag{
+  margin-right: 10rpx;
+}
+.activity_title{
+  margin-bottom: 20rpx;
+}
+
+.activity_bottom{
+  text-align: left;
+  margin-top: 10rpx;
+}

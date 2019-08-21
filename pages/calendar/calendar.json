@@ -1,4 +1,6 @@
 {
   "component": true,
-  "usingComponents": {}
+  "usingComponents": {
+    "v-icon": "/ui/es6/icon/index"
+  }
 }

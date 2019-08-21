@@ -10,5 +10,18 @@
   <view class="usermotto">
     <text class="user-motto" bindtap="changeCalendar">{{motto}}</text>
   </view> -->
-  <calendar selected="{{selected}}" bindselect="bindselect" bindgetdate="bindgetdate" is-open="true"/>
+
+  <calendar selected="{{selected}}" bindselect="bindselect" bindgetdate="bindgetdate" is-open="true" />
+  <view class="activity_list">
+    <v-card wx:for="{{activityList}}" wx:key="index" wx:for-item="list" custom-class="activity_info" title-class="activity_title" title="{{list.title}}" thumb="{{list.cover}}">
+      <view slot="tags" class="tags_view">
+        <v-tag color="#f2826a" plain wx:for="{{list.tags}}" wx:for-item="tag" wx:for-index="tagIdx" wx:key="tagIdx">{{tag}}{{tagIdx}}</v-tag>
+      </view>
+      <view slot="bottom" class="activity_bottom">
+        <view>{{list.activityDate}}</view>
+        <view>{{list.address}}</view>
+      </view>
+    </v-card>
+  </view>
+
 </view>

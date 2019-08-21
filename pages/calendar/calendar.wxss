@@ -57,42 +57,28 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  color: #52b8f5;
-  width: 53rpx;
-  height: 53rpx;
+  color: #35a4de;
+  width: 40rpx;
+  height: 40rpx;
+  margin: 0 30rpx;
 }
-
-.iconfont .left, .iconfont .right {
-  display: block;
-  width: 0;
-  height: 0;
-  border-top: 20rpx solid transparent;
-  border-bottom: 20rpx solid transparent;
-}
-
-.iconfont .left {
-  border-right: 40rpx solid transparent;
-}
-
-.iconfont .right {
-  border-left: 40rpx solid transparent;
-}
-
-.iconfont .left.color {
-  border-right-color: #52b8f5;
-}
-
-.iconfont .right.color {
-  border-left-color: #52b8f5;
+.iconfont .calendar_icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+  border: 1rpx solid #a1b1b6;
 }
 
 .btn {
   margin: 0 30rpx;
   width: 240rpx;
   height: 53rpx;
-  border: 1rpx solid #52b8f5;
+  border: 1rpx solid #35a4de;
   border-radius: 26rpx;
-  color: #52b8f5;
+  color: #35a4de;
   font-size: 26rpx;
   box-sizing: border-box;
 }
@@ -101,25 +87,22 @@
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   font-size: 32rpx;
   height: 80rpx;
 }
 
 .backtoday {
-  position: absolute;
-  right: 0;
-  top: 15rpx;
   padding: 0 10rpx;
   padding-left: 20rpx;
   height: 50rpx;
   line-height: 50rpx;
-  border: 1px #52b8f5 solid;
+  border: 1px #35a4de solid;
   border-right: none;
   font-size: 28rpx;
-  border-top-left-radius: 50rpx;
-  border-bottom-left-radius: 50rpx;
-  color: #52b8f5;
+  text-align: center;
+  border-radius: 50rpx;
+  color: #35a4de;
   background: rgba(82, 184, 245, 0.1);
 }
 
@@ -145,13 +128,15 @@
 
 .calendar-header {
   display: flex;
+  background: #e3e6e7;
+  border-radius: 15rpx;
 }
 
 .calendar-header view {
   width: 100%;
   text-align: center;
   line-height: 80rpx;
-  color: #52b8f5;
+  color: #269bda;
 }
 
 .calendar-body {
@@ -167,13 +152,30 @@
 
 .date {
   position: relative;
+  display: flex;
   width: 100%;
   text-align: center;
   color: #1c1c1c;
   background: #fff;
   line-height: 100rpx;
+  border-radius: 50%;
+  justify-content: center;
 }
 
+.datebox {
+  display: flex;
+  width: 60rpx;
+  height: 60rpx;
+  margin: 10rpx;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.date-current .datebox{
+  background: #35a4de;
+  color: #fff;
+}
 .date.active {
   background: red;
 }
@@ -182,10 +184,7 @@
   color: #a4a4a4;
 }
 
-.date-current {
-  background: #52b8f5;
-  color: #fff;
-}
+
 
 .data-circle {
   position: absolute;
@@ -205,7 +204,7 @@
   height: 100rpx;
   line-height: 100rpx;
   text-align: center;
-  color: #52b8f5;
+  color: #35a4de;
 }
 
 .flex-center {

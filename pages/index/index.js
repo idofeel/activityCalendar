@@ -7,7 +7,38 @@ Page({
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    activityList:[{
+      title:'活动名称0',
+      tags: ['标签', '标签'],
+      activityDate:'2019年08月20日 星期二 6:30',
+      address:'地点：首都图书馆',
+      cover:'https://img.yzcdn.cn/vant/t-thirt.jpg'
+    }, {
+        title: '活动名称1',
+        tags: ['标签', '标签', '标签', '标签', '标签'],
+        activityDate: '2019年08月20日 星期二 6:30',
+        address: '地点：首都图书馆',
+        cover: 'https://img.yzcdn.cn/vant/t-thirt.jpg'
+      }, {
+        title: '活动名称2',
+        tags: ['标签', '标签',  '标签', '标签'],
+        activityDate: '2019年08月20日 星期二 6:30',
+        address: '地点：首都图书馆',
+        cover: 'https://img.yzcdn.cn/vant/t-thirt.jpg'
+      }, {
+        title: '活动名称3',
+        tags: ['标签', '标签',  '标签', '标签'],
+        activityDate: '2019年08月20日 星期二 6:30',
+        address: '地点：首都图书馆',
+        cover: 'https://img.yzcdn.cn/vant/t-thirt.jpg'
+      }, {
+        title: '活动名称4',
+        tags: ['标签', '标签', '标签', '标签'],
+        activityDate: '2019年08月20日 星期二 6:30',
+        address: '地点：首都图书馆',
+        cover: 'https://img.yzcdn.cn/vant/t-thirt.jpg'
+      }]
   },
   //事件处理函数
   bindViewTap: function() {
@@ -51,11 +82,11 @@ Page({
       hasUserInfo: true
     })
   },
-  changeCalendar(){
-   wx.navigateTo({
-     url: '/pages/calendar/calendar',
-   })
-  },
+  // changeCalendar(){
+  //  wx.navigateTo({
+  //    url: '/pages/calendar/calendar',
+  //  })
+  // },
   /**
   * 日历是否被打开
   */

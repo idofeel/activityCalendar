@@ -1,5 +1,8 @@
 {
   "usingComponents": {
-    "calendar": "/pages/calendar/calendar"
+    "calendar": "/pages/calendar/calendar",
+    "v-button": "/ui/es6/button/index",
+    "v-card": "/ui/es6/card/index",
+    "v-tag": "/ui/es6/tag/index"
   }
 }
